@@ -1,0 +1,274 @@
+/* General Body Styles for all pages */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f5f9;
+    height: 100%;
+  }
+  
+  /* Navbar styling for all pages */
+  nav {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: inline-flex;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Home Page (index.html) - Map Section */
+  #map-section {
+    position: relative;
+    height: 80vh;
+  }
+  
+  #map {
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Input Islands for Home Page */
+  .input-islands {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+  }
+  
+  .input-island {
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .input-island input {
+    border: none;
+    outline: none;
+    padding: 0.8rem;
+    border-radius: 8px;
+    width: 70%;
+    font-size: 1rem;
+    background-color: #f2f5f9;
+  }
+  
+  .input-island button {
+    background-color: #74ebd5;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .input-island button:hover {
+    background-color: #65d4c6;
+  }
+  
+  /* Track My Journey Button */
+  #track-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  #track-button button {
+    background-color: #4285F4;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  #track-button button:hover {
+    background-color: #357ae8;
+  }
+  
+  /* Sign-In Page (sign-in.html) Styling */
+  #sign-in-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  }
+  
+  .container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  
+  .social-signin {
+    margin-bottom: 1.5rem;
+  }
+  
+  .btn-google {
+    background-color: #4285F4;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .btn-google:hover {
+    background-color: #357ae8;
+  }
+  
+  .or-text {
+    color: #888;
+    margin: 1rem 0;
+  }
+  
+  .email-signin {
+    margin-bottom: 1rem;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .input-field:focus {
+    border-color: #74ebd5;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 160, 176, 0.5);
+  }
+  
+  .btn-signin {
+    background-color: #74ebd5;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .btn-signin:hover {
+    background-color: #65d4c6;
+  }
+  
+  .extra-links {
+    margin-top: 1.5rem;
+    color: #555;
+  }
+  
+  .extra-links a {
+    color: #74ebd5;
+    text-decoration: none;
+  }
+  
+  .extra-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Services Page (services.html) Styling */
+  #services-section {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+  
+  .service {
+    background-color: #f4f4f4;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    margin: 1rem;
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+  }
+  
+  .service:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service h3 {
+    color: #333;
+    margin-top: 1rem;
+  }
+  
+  .service p {
+    color: #666;
+    margin: 0.5rem 0;
+  }
+  
+  .phone-icon {
+    font-size: 2rem;
+    color: #74ebd5;
+  }
+  
+  .service a {
+    color: #74ebd5;
+    text-decoration: none;
+  }
+  
+  .service a:hover {
+    text-decoration: underline;
+  }
+  

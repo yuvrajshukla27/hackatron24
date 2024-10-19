@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SecurePath - Sign In</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+  <script src="firebase-config.js"></script> <!-- Add Firebase config here -->
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sign-in.html">Sign In</a></li>
+      <li><a href="services.html">Services</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sign-In Section -->
+  <section id="sign-in-section">
+    <div class="container">
+      <h2 class="title">Welcome Back!</h2>
+      <p class="subtitle">Sign in to continue</p>
+      
+      <div class="social-signin">
+        <button id="google-sign-in-btn" class="btn-google">Continue with Google</button>
+      </div>
+
+      <p class="or-text">OR</p>
+
+      <div class="email-signin">
+        <input type="email" id="email" placeholder="Enter your email" class="input-field">
+        <input type="password" id="password" placeholder="Enter your password" class="input-field">
+        <button id="email-sign-in-btn" class="btn-signin">Sign In</button>
+      </div>
+      
+      <div class="extra-links">
+        <p><a href="#">Forgot your password?</a></p>
+        <p>Don't have an account? <a href="#">Sign up</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
